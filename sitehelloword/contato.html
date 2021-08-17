@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Contato</title>
+</head>
+
+<body>
+    <nav id="menu">
+
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./sobre.html">Sobre Favoritos</a></li>
+            <li><a href="./contato.html" class="active">Contato</a></li>
+        </ul>
+
+    </nav>
+
+    <section>
+        <div class="caixa_bem_vindo">
+            <h1>Faça o bem, sem olhar a quem! &#128521; Doe Sangue 🩸 &#9996;</h1>
+        </div>
+        <script src="./js/maquinaEscrever.js"></script>
+    </section>
+
+    <section>
+        <form name="meu_form">
+
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nomeid" placeholder="seu nome" required="required" name="nome" />
+            <br>
+            <label for="fone">Celular:</label>
+            <input type="tel" id="foneid" placeholder="(00)00000-0000" name="fone" />
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="emailid" placeholder="exemplo@exemplo.com" name="email" />
+            <br><br>
+            <label for="email">Assunto:</label>
+            <br>
+            <textarea placeholder="Deixe sua opnião"></textarea>
+            <br>
+            <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+        </form>
+
+    </section>
+
+    <footer>
+        Autora: jessica_oliver
+    </footer>
+</body>
+
+</html>
