@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Contato</title>
+</head>
+
+<body>
+    <nav id="menu">
+
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./sobre.html">Sobre Favoritos</a></li>
+            <li><a href="./contato.html" class="active">Contato</a></li>
+        </ul>
+
+    </nav>
+
+    <section>
+        <div class="caixa_bem_vindo">
+            <h1>Faça o bem, sem olhar a quem! &#128521; Doe Sangue 🩸 &#9996;</h1>
+        </div>
+    </section>
+
+    <section class="contato">
+        <div>
+            <form>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="seu nome" required="required" name="nome" onkeyup="validaNome()" />
+
+                <div id="txtNome"></div>
+
+
+                <label for="celular">Celular:</label>
+                <input type="celular" id="celular" placeholder="(00)00000-0000" name="celular" onkeyup="validaCelular()" />
+                <div id="txtCelular"></div>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required="required" placeholder="exemplo@exemplo.com" name="email" onkeyup="validaEmail()" />
+                <div id="txtEmail"></div>
+                <br>
+                <label for="assunto">Assunto:</label>
+                <br>
+                <textarea placeholder="Deixe sua opnião" name="assunto" id="assunto" required="required" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+                <button class="enviar" onclick="enviar()"> Enviar </button>
+
+            </form>
+        </div>
+        <div>
+            <h2>Endereço</h2>
+            <p>Av. Paulista, 1000</p>
+            <p>São paulo - SP</p>
+
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.098169135354!2d-46.65412628538377!3d-23.564917467607884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a7d%3A0xdeb92126793e5e90!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1629299179275!5m2!1spt-BR!2sbr"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapZoom()" onmouseout="mapNormal()"></iframe>
+        </div>
+
+    </section>
+
+    <footer>
+        &#0169; jessica_oliver
+    </footer>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
