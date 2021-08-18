@@ -22,9 +22,9 @@ let map = document.querySelector('#map')
 
 
 //para testar envio
-let nomeOk = false
-let emailOk = false
-let assuntoOk = false
+let nomeOk
+let emailOk
+let assuntoOk
 
 //tornando o horizontal maior
 nome.style.width = '50%'
@@ -36,6 +36,7 @@ function validaNome() {
 
         txtNome.innerHTML = 'Nome inválido'
         txtNome.style.color = 'red'
+        nomeOk = false
 
     } else {
 
@@ -74,7 +75,7 @@ function validaEmail() {
 
         txtEmail.innerHTML = 'Email inválido'
         txtEmail.style.color = 'red'
-
+        emailOk = false
     } else {
 
         txtEmail.innerHTML = 'Email Válido'
@@ -93,7 +94,7 @@ function validaAssunto() {
         txtAssunto.innerHTML = 'Texto com mais de 100 caracteres, diminua o caracter'
         txtAssunto.style.color = 'red'
         txtAssunto.style.display = 'block'
-
+        assuntoOk = false
 
     } else {
         txtAssunto.style.display = 'none'
