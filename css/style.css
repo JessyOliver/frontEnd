@@ -70,7 +70,7 @@ menu li a:hover:not(.active) {
     margin-top: 3rem;
     background: linear-gradient(rgba(0, 0, 0, 0.623), rgba(49, 2, 2, 0.658));
     width: 60rem;
-    height: 29rem;
+    height: 32rem;
     border-radius: 3rem;
     border: 0.2rem transparent rgb(140, 136, 156);
 }
